@@ -12,6 +12,12 @@
 		6FF5DB52205FC58D00C2965A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF5DB50205FC58D00C2965A /* Main.storyboard */; };
 		6FF5DB54205FC58D00C2965A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF5DB53205FC58D00C2965A /* Assets.xcassets */; };
 		6FF5DB57205FC58D00C2965A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF5DB55205FC58D00C2965A /* LaunchScreen.storyboard */; };
+		6FF5DB5F205FC68B00C2965A /* one.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FF5DB5E205FC68B00C2965A /* one.jpg */; };
+		6FF5DB61205FC69800C2965A /* two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FF5DB60205FC69800C2965A /* two.jpg */; };
+		6FF5DB63205FC69D00C2965A /* three.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FF5DB62205FC69D00C2965A /* three.jpg */; };
+		6FF5DB65205FC6A300C2965A /* four.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FF5DB64205FC6A300C2965A /* four.jpg */; };
+		6FF5DB67205FC6AA00C2965A /* five.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FF5DB66205FC6AA00C2965A /* five.jpg */; };
+		6FF5DB6B205FD9DE00C2965A /* zoomedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF5DB6A205FD9DE00C2965A /* zoomedImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		6FF5DB53205FC58D00C2965A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FF5DB56205FC58D00C2965A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FF5DB58205FC58D00C2965A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FF5DB5E205FC68B00C2965A /* one.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = one.jpg; sourceTree = "<group>"; };
+		6FF5DB60205FC69800C2965A /* two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = two.jpg; sourceTree = "<group>"; };
+		6FF5DB62205FC69D00C2965A /* three.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = three.jpg; sourceTree = "<group>"; };
+		6FF5DB64205FC6A300C2965A /* four.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = four.jpg; sourceTree = "<group>"; };
+		6FF5DB66205FC6AA00C2965A /* five.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = five.jpg; sourceTree = "<group>"; };
+		6FF5DB6A205FD9DE00C2965A /* zoomedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zoomedImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +52,11 @@
 			children = (
 				6FF5DB4B205FC58D00C2965A /* SlideshowApp2 */,
 				6FF5DB4A205FC58D00C2965A /* Products */,
+				6FF5DB5E205FC68B00C2965A /* one.jpg */,
+				6FF5DB60205FC69800C2965A /* two.jpg */,
+				6FF5DB62205FC69D00C2965A /* three.jpg */,
+				6FF5DB64205FC6A300C2965A /* four.jpg */,
+				6FF5DB66205FC6AA00C2965A /* five.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +77,7 @@
 				6FF5DB53205FC58D00C2965A /* Assets.xcassets */,
 				6FF5DB55205FC58D00C2965A /* LaunchScreen.storyboard */,
 				6FF5DB58205FC58D00C2965A /* Info.plist */,
+				6FF5DB6A205FD9DE00C2965A /* zoomedImage.swift */,
 			);
 			path = SlideshowApp2;
 			sourceTree = "<group>";
@@ -123,8 +141,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FF5DB5F205FC68B00C2965A /* one.jpg in Resources */,
+				6FF5DB67205FC6AA00C2965A /* five.jpg in Resources */,
 				6FF5DB57205FC58D00C2965A /* LaunchScreen.storyboard in Resources */,
+				6FF5DB63205FC69D00C2965A /* three.jpg in Resources */,
 				6FF5DB54205FC58D00C2965A /* Assets.xcassets in Resources */,
+				6FF5DB61205FC69800C2965A /* two.jpg in Resources */,
+				6FF5DB65205FC6A300C2965A /* four.jpg in Resources */,
 				6FF5DB52205FC58D00C2965A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FF5DB4F205FC58D00C2965A /* ViewController.swift in Sources */,
+				6FF5DB6B205FD9DE00C2965A /* zoomedImage.swift in Sources */,
 				6FF5DB4D205FC58D00C2965A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
