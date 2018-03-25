@@ -45,7 +45,13 @@ class ViewController: UIViewController {
     @IBAction func onTapImage(_ sender: Any) {
         // セグエを使用して画面を遷移
         performSegue(withIdentifier:"zoomedImage", sender: nil)
-        self.timer.invalidate()
+        
+        if timer == nil{
+        }
+        else{
+            self.timer.invalidate()
+            
+        }
     }
     
     override func didReceiveMemoryWarning() {
