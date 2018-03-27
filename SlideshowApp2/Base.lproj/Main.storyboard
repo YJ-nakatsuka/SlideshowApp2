@@ -19,54 +19,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOJ-on-B3G">
-                                <rect key="frame" x="154" y="470" width="67" height="30"/>
-                                <state key="normal" title="start/stop"/>
+                                <rect key="frame" x="156" y="300" width="62" height="30"/>
+                                <state key="normal" title="startstop"/>
                                 <connections>
                                     <action selector="playstop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dsa-gb-5a6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lot-2U-scS">
-                                <rect key="frame" x="100" y="470" width="34" height="30"/>
-                                <state key="normal" title="back"/>
-                                <connections>
-                                    <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X5L-eL-V9i"/>
-                                </connections>
-                            </button>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ayf-rv-eSA">
-                                <rect key="frame" x="100" y="120" width="175" height="60"/>
+                                <rect key="frame" x="87" y="100" width="200" height="150"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="KzG-w9-OvY"/>
+                                    <constraint firstAttribute="height" constant="150" id="Csm-XY-WvR"/>
+                                    <constraint firstAttribute="width" constant="200" id="fMi-Q7-kA6"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="8YH-my-k8e" appends="YES" id="IZ8-Cs-7pV"/>
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ikb-MV-4ng">
-                                <rect key="frame" x="245" y="470" width="30" height="30"/>
+                                <rect key="frame" x="238" y="300" width="30" height="30"/>
                                 <state key="normal" title="next"/>
                                 <connections>
                                     <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k30-lh-M0E"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lot-2U-scS">
+                                <rect key="frame" x="102" y="300" width="34" height="30"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X5L-eL-V9i"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ayf-rv-eSA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="00a-ms-tXN"/>
-                            <constraint firstItem="GOJ-on-B3G" firstAttribute="leading" secondItem="lot-2U-scS" secondAttribute="trailing" constant="20" id="JDa-Ah-zaK"/>
-                            <constraint firstItem="GOJ-on-B3G" firstAttribute="top" secondItem="Ayf-rv-eSA" secondAttribute="bottom" constant="290" id="U7y-Qw-K8c"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ikb-MV-4ng" secondAttribute="trailing" constant="100" id="UQV-Ab-d4M"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ayf-rv-eSA" secondAttribute="trailing" constant="100" id="lu0-Kq-p72"/>
-                            <constraint firstItem="Ikb-MV-4ng" firstAttribute="leading" secondItem="GOJ-on-B3G" secondAttribute="trailing" constant="24" id="oY1-Zj-45o"/>
-                            <constraint firstItem="Ayf-rv-eSA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="tEf-QI-GGL"/>
-                            <constraint firstItem="lot-2U-scS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="u6o-Zo-KUL"/>
-                            <constraint firstItem="Ikb-MV-4ng" firstAttribute="top" secondItem="Ayf-rv-eSA" secondAttribute="bottom" constant="290" id="va5-VK-aTj"/>
-                            <constraint firstItem="lot-2U-scS" firstAttribute="top" secondItem="Ayf-rv-eSA" secondAttribute="bottom" constant="290" id="wXV-47-hy5"/>
+                            <constraint firstItem="Ayf-rv-eSA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="3lY-iW-nZb"/>
+                            <constraint firstItem="GOJ-on-B3G" firstAttribute="top" secondItem="Ayf-rv-eSA" secondAttribute="bottom" constant="50" id="Auf-il-ZtI"/>
+                            <constraint firstItem="GOJ-on-B3G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DBt-V5-QRm"/>
+                            <constraint firstItem="Ikb-MV-4ng" firstAttribute="top" secondItem="Ayf-rv-eSA" secondAttribute="bottom" constant="50" id="Ueo-fU-e91"/>
+                            <constraint firstItem="Ayf-rv-eSA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cO4-cF-KxU"/>
+                            <constraint firstItem="Ikb-MV-4ng" firstAttribute="leading" secondItem="GOJ-on-B3G" secondAttribute="trailing" constant="20" id="cfH-wX-4v2"/>
+                            <constraint firstItem="GOJ-on-B3G" firstAttribute="leading" secondItem="lot-2U-scS" secondAttribute="trailing" constant="20" id="huB-6i-anY"/>
+                            <constraint firstItem="lot-2U-scS" firstAttribute="top" secondItem="Ayf-rv-eSA" secondAttribute="bottom" constant="50" id="u1Q-Eo-hhw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="lot-2U-scS" id="YxB-Go-rrZ"/>
                         <outlet property="imageView" destination="Ayf-rv-eSA" id="0vN-dU-X1e"/>
+                        <outlet property="nextButton" destination="Ikb-MV-4ng" id="duH-Vp-pWs"/>
+                        <outlet property="startstopButton" destination="GOJ-on-B3G" id="1KW-2o-Sh4"/>
                         <segue destination="it7-Jb-PKr" kind="show" identifier="zoomedImage" id="ea8-76-qKO"/>
                     </connections>
                 </viewController>
@@ -87,28 +89,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rE4-wl-Oq1">
-                                <rect key="frame" x="0.0" y="177" width="375" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="BJn-96-dOb"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GM9-up-P7v">
-                                <rect key="frame" x="170" y="347" width="34" height="30"/>
+                                <rect key="frame" x="170.5" y="432" width="34" height="30"/>
                                 <state key="normal" title="back"/>
                                 <connections>
                                     <segue destination="fmj-yB-pg2" kind="unwind" unwindAction="unwind:" id="Ctk-Xh-Xj7"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rE4-wl-Oq1">
+                                <rect key="frame" x="0.0" y="100" width="375" height="282"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="282" id="l3h-23-m1Y"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="rE4-wl-Oq1" firstAttribute="leading" secondItem="cm7-j4-gSg" secondAttribute="leading" id="1R8-EI-N92"/>
-                            <constraint firstItem="cm7-j4-gSg" firstAttribute="trailing" secondItem="GM9-up-P7v" secondAttribute="trailing" constant="171" id="2aa-wU-Ava"/>
-                            <constraint firstItem="GM9-up-P7v" firstAttribute="leading" secondItem="cm7-j4-gSg" secondAttribute="leading" constant="170" id="Adf-JA-ZkI"/>
-                            <constraint firstItem="rE4-wl-Oq1" firstAttribute="top" secondItem="cm7-j4-gSg" secondAttribute="top" constant="157" id="nTs-in-0Pe"/>
-                            <constraint firstItem="rE4-wl-Oq1" firstAttribute="trailing" secondItem="cm7-j4-gSg" secondAttribute="trailing" id="sGa-4X-cW7"/>
-                            <constraint firstItem="GM9-up-P7v" firstAttribute="top" secondItem="rE4-wl-Oq1" secondAttribute="bottom" constant="50" id="t81-eW-ZDa"/>
+                            <constraint firstItem="GM9-up-P7v" firstAttribute="centerX" secondItem="6jk-cm-qj7" secondAttribute="centerX" id="CDG-Fk-tex"/>
+                            <constraint firstItem="rE4-wl-Oq1" firstAttribute="top" secondItem="cm7-j4-gSg" secondAttribute="top" constant="80" id="DNR-yp-lRc"/>
+                            <constraint firstItem="GM9-up-P7v" firstAttribute="top" secondItem="rE4-wl-Oq1" secondAttribute="bottom" constant="50" id="ZtN-mH-ufv"/>
+                            <constraint firstItem="rE4-wl-Oq1" firstAttribute="leading" secondItem="cm7-j4-gSg" secondAttribute="leading" id="kc0-i9-zfL"/>
+                            <constraint firstItem="rE4-wl-Oq1" firstAttribute="trailing" secondItem="cm7-j4-gSg" secondAttribute="trailing" id="ztN-Ke-s7x"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cm7-j4-gSg"/>
                     </view>
@@ -119,7 +120,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pVU-ds-kFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="fmj-yB-pg2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="988" y="133"/>
+            <point key="canvasLocation" x="988" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>

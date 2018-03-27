@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     var timer: Timer!
     var timer_sec: Float = 0
     
+    
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var startstopButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
+    
     @IBOutlet weak var imageView: UIImageView!
     // 表示している画像の番号
     var dispImageNo = 0
@@ -46,11 +51,9 @@ class ViewController: UIViewController {
         // セグエを使用して画面を遷移
         performSegue(withIdentifier:"zoomedImage", sender: nil)
         
-        if timer == nil{
-        }
-        else{
+        if timer != nil{
             self.timer.invalidate()
-            
+            self.timer = nil
         }
     }
     
@@ -63,13 +66,27 @@ class ViewController: UIViewController {
         dispImageNo += 1
         displayImage()
     }
-
+    
+    
     @IBAction func playstop(_ sender: Any) {
-        if self.timer == nil {
-            self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateSlide), userInfo: nil, repeats: true)
-        }else{
+        
+        // ボタンの有効無効切替、タイトル切替
+        if timer != nil{
+            
+            nextButton.isEnabled = true
+            backButton.isEnabled = true
+            startstopButton.setTitle("start", for: [])
+            
             self.timer.invalidate()   // 現在のタイマーを破棄する
             self.timer = nil          // startTimer() の timer == nil で判断するために、 timer = nil としておく
+            
+        }else{
+            
+            nextButton.isEnabled = false
+            backButton.isEnabled = false
+            startstopButton.setTitle("stop", for: [])
+            self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateSlide), userInfo: nil, repeats: true)
+            
         }
     }
     
@@ -86,6 +103,7 @@ class ViewController: UIViewController {
             displayImage()
         }
     }
+
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }
